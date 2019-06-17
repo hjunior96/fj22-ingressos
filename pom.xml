@@ -150,9 +150,9 @@
         </plugins>
     </build>
     <developers>
-	<developer>
-		<name>Hamilton Junior</name>
-		<email>hamilton.junior96@yahoo.com.br</email>
+		<developer>
+			<name>Hamilton Junior</name>
+			<email>hamilton.junior96@yahoo.com.br</email>
         </developer>
     </developers>
 </project>
