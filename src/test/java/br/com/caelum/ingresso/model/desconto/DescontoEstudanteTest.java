@@ -10,8 +10,10 @@ import org.junit.Test;
 
 import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Ingresso;
+import br.com.caelum.ingresso.model.Lugar;
 import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
+import br.com.caelum.ingresso.model.TipoDeIngresso;
 
 public class DescontoEstudanteTest {
 
@@ -20,9 +22,10 @@ public class DescontoEstudanteTest {
 		
 		Sala sala 	= new Sala("Eldorado - IMAX", new BigDecimal(20));
 		Filme filme = new Filme("Rogue One", Duration.ofMinutes(120), "SCI-FI", new BigDecimal(12));
+		Lugar lugar = new Lugar ("A", 1);
 		
 		Sessao sessao = new Sessao(LocalTime.parse("10:00:00"), sala, filme);
-		Ingresso ingresso = new Ingresso(sessao, new DescontoEstudante());
+		Ingresso ingresso = new Ingresso(sessao, TipoDeIngresso.ESTUDANTE, lugar);
 		
 		BigDecimal precoEsperado = new BigDecimal(16).setScale(2, RoundingMode.HALF_UP);
 		
