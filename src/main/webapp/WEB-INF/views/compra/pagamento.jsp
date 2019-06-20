@@ -59,13 +59,17 @@
                     <label for="cpf">CPF:</label>
                     <input id="cpf" type="text" name="cpf" class="form-control">
                 </div>
+                <div class="col-md-6">
+                    <label for="vencimento">Vencimento:</label>
+                    <input id="vencimento" type="text" name="vencimento" class="form-control">
+                </div>
             </div>
 
 
             <div class="form-group">
                 <div class="col-md-8">
-                    <label for="cartaoDeCredito">Cartão de Crédito:</label>
-                    <input id="cartaoDeCredito" type="text" name="cartaoDeCredito" class="form-control">
+                    <label for="numero">Cartão de Crédito:</label>
+                    <input id="numero" type="text" name="numero" class="form-control">
                 </div>
 
                 <div class="col-md-4">
@@ -73,14 +77,12 @@
                     <input id="cvv" type="text" name="cvv" class="form-control">
                 </div>
             </div>
-
-
             <div class="form-group">
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Comprar</button>
+                <div class="col-md-4">
+                    <label for="vencimento">Vencimento:</label>
+                    <input id="vencimento" type="text" name="vencimento" class="form-control">
                 </div>
             </div>
-
         </form>
 		</div>
     </jsp:body>
